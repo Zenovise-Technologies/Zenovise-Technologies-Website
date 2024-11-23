@@ -1,0 +1,66 @@
+
+$primary-500: #8BBC3A;
+$primary-600: #7fac38;
+
+$secondary-50: #F0F3F7;
+$secondary-200: #6989AA;
+$secondary-300: #365677;
+$secondary-400: #294059;
+$secondary-500: #082349;
+$secondary-600: #061B37;
+$secondary-700: #0C1926;
+$secondary-750: #192736;
+$secondary-800: #020912;
+$secondary-900: #373B45; 
+
+$gray-500: #BCCAD9;
+$gray-600: #8EA6BF;
+
+$base-white: #fff;
+
+$font-xs: 12px;
+$font-sm: 14px;
+$font-md: 16px;
+$font-lg: 18px;
+$font-xl: 20px;
+$font-xxl: 22px;
+$font-24: 24px;
+$font-32: 32px;
+$font-30: 30px;
+$font-40: 40px;
+$font-48: 48px;
+$font-50: 50px;
+$font-72: 72px;
+
+$font-family:  "Montserrat Alternates", sans-serif;
+
+/* Breakpoint */
+$breakpoint-large-desktop: 1200px;
+$breakpoint-desktop: 992px;
+$breakpoint-tablet: 768px;
+$breakpoint-mobile: 576px;
+
+/* Mixins for responsiveness */
+@mixin large-desktop {
+    @media (max-width: #{$breakpoint-large-desktop}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (max-width: #{$breakpoint-desktop}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (max-width: #{$breakpoint-tablet}) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: #{$breakpoint-tablet - 1}) {
+        @content;
+    }
+}

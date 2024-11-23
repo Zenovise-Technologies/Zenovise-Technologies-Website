@@ -1,0 +1,215 @@
+@import "../../app/global.module.scss";
+
+.footerMainInfoBoxWrapper {
+    display: flex;
+    justify-content: space-between;
+    background-color: $secondary-750;
+    border-radius: 50px;
+    border: 4px solid white;
+    padding: 40px 88px 64px 88px;
+    margin: auto;
+    width: 70%;
+    position: relative;
+    overflow: hidden;
+    gap: 16px;
+    flex-wrap: wrap;
+
+    @include large-desktop {
+        width: 90%;
+    }
+
+    @include desktop {
+        padding: 40px;
+    }
+
+    .footerMainInfoWrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        z-index: 1;
+
+        .infoTitleWrapper {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+
+            .infoTitleIconWrapper {
+                width: 54px;
+                height: 54px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                background-color: $primary-500;
+            }
+
+            .infoText {
+                font-size: $font-lg;
+                line-height: 26px;
+                font-weight: bold;
+                color: $base-white;
+            }
+
+            .infoInnerTitle {
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+
+                .infoSubText {
+                    list-style-type: none;
+                    text-decoration: none;
+                }
+            }
+            
+            .infoSubText {
+                font-size: $font-md;
+                line-height: 22px;
+                color: $base-white;
+            }
+        }
+    }
+
+    .leftVectionImageWrapper {
+        position: absolute;
+        left: -65px;
+        transform: scale(1, -1) rotate(37deg);
+        top: -194px;
+
+        .vectorImgLeft {
+            height: 100%;
+        }
+    }
+
+    .rightVectionImageWrapper {
+        position: absolute;
+        right: -112px;
+        transform: rotate(75deg);
+        top: -62px;
+
+        .vectorImgRight {
+            height: 100%;
+        }
+    }
+}
+
+.footerBottomPartWrapper {
+    width: 100%;
+    height: 100%;
+    margin-top: -135px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background: linear-gradient(-90deg, rgba(62, 76, 73, 1) 0%, rgba(12, 25, 38, 1) 40%);
+
+    .footerSiteMapListWrapper {
+        padding-top: 175px;
+        width: 75%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 16px;
+
+        .footerSiteMapListInnerWrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+
+            .footerSiteMapListInner {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 100px;
+
+                @include tablet {
+                    gap: 16px;
+                }
+            }
+
+            .footerButtonWrapper {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 8px;
+
+                .footerButton {
+                    background-color: $secondary-750;
+                    height: 48px;
+                    width: 48px;
+                    border-radius: 30px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+
+        .footerSiteMapList {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            justify-content: flex-start;
+            align-items: flex-start;
+
+            .footerSiteMapListTitle {
+                font-size: $font-lg;
+                color: $base-white;
+                font-weight: bold;
+                line-height: 26px;
+            }
+
+            .footerSiteMapListItemWrapper {
+                display: flex;
+                gap: 40px;
+
+                .footerSiteMapListItem {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+    
+                    a {
+                        font-size: $font-sm;
+                        text-decoration: none;
+                        color: $gray-600;
+                    }
+
+                    .footerSiteMapListIconWrapper {
+                        display: flex;
+                        gap: 6px;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+
+    .footerCopyrightWrapper {
+        width: 72%;
+        display: flex;
+        justify-content: space-between;
+        border-top: 2px solid $secondary-200;
+        padding-top: 24px;
+        padding-bottom: 36px;
+        align-items: flex-end;
+        gap: 16px;
+
+        .footerBottomImage {
+            max-width: 285px;
+            max-height: 36px;
+            width: 100%;
+            height: 100%;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .copyRightReservedText {
+            font-size: $font-sm;
+            line-height: 20px;
+            color: $base-white;
+        }
+    }
+}

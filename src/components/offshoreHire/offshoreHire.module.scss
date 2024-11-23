@@ -1,0 +1,460 @@
+@import "../../app/global.module.scss";
+
+.jobPositionMainWrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+
+    .jobPositionCardWrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 48px;
+        position: relative;
+        border: 1px solid transparent;
+        background: linear-gradient(white, white) padding-box, linear-gradient(to top, white, #0B2D61) border-box;
+        padding: 36px 24px;
+        gap: 58px;
+
+        &:nth-child(2), &:nth-child(5) {
+            background: linear-gradient(white, white) padding-box, linear-gradient(to bottom, white, #0B2D61) border-box;
+        }
+
+        .jobPositionContentWrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+
+            .mainContent {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+
+                .mainContentText {
+                    font-size: $font-24;
+                    font-weight: 700;
+                    line-height: 34px;
+                    color: $secondary-750;
+                }
+            }
+        }
+
+        .getInTouchBtn {
+            background-color: $primary-500;
+            border-radius: 8px;
+            white-space: nowrap;
+            font-family: unset;
+            padding: 0 30px;
+            height: 40px;
+            border: none;
+            color: $base-white;
+            font-family: unset;
+            transition: 0.2s ease-in-out;
+            cursor: pointer;
+        
+            &:hover {
+                background-color: $primary-600;
+            }
+        }
+    }
+}
+
+.processFollowWrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    
+    .bgBox {
+        height: 400px;
+        width: 45%;
+        border-top-right-radius: 250px;
+        background-color: #F9FAFB;
+        align-self: flex-start;
+        margin-top: -40px;
+        position: relative;
+
+        &:nth-child(even) {
+            border-top-right-radius: 0;
+            border-top-left-radius: 250px;
+            align-self: flex-end;
+
+            .processFollowBoxOuterWrapper {
+                right: auto;
+                left: -8%;
+            }
+        }
+    }
+
+    .processFollowBoxOuterWrapper {
+        position: absolute;
+        right: -8%;
+    }
+
+    .processFollowBoxWrapper {
+        display: flex;
+        flex-direction: column;
+        padding: 36px 24px;
+        gap: 32px;
+        position: relative;
+        max-width: 600px;
+        width: 100%;
+
+        .processFollowBullet {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 4px solid transparent;
+            background: linear-gradient(white, white) padding-box, linear-gradient(to left, white, #8BBC3A) border-box;
+            padding: 4px 16px 16px 34px;
+            color: $secondary-700;
+            font-size: $font-72;
+            line-height: 80px;
+            font-weight: bold;
+            position: absolute;
+            top: -10px;
+            left: -95px;
+        }
+
+        .processFollowTitle {
+            color: $secondary-750;
+            font-size: $font-30;
+            line-height: 40px;
+            font-weight: bold;
+        }
+
+        .processFollowSubTitle {
+            color: $secondary-300;
+            font-size: $font-lg;
+            line-height: 26px;
+            font-weight: 500;
+        }
+
+        .imageWrapper {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+.processFollowSection {
+    padding-bottom: 0px !important;
+    > div {
+        max-width: 100% !important;
+    }
+}
+
+.hireFromUsMainWrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 86px;
+
+    .hireFromUsCardWrapper {
+        display: flex;
+        flex-direction: column;
+        padding: 36px 36px 56px 36px;
+        border: 4px solid transparent;
+        border-radius: 30px;
+        background: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)) padding-box, linear-gradient(to left, rgb(0, 0, 0), #8BBC3A) border-box;
+        position: relative;
+        max-width: 540px;
+        width: 100%;
+
+        .hireFromUsContentWrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+            .mainContentText {
+                color: $base-white;
+                font-size: $font-30;
+                line-height: 40px;
+                font-weight: bold;
+            }
+
+            .mainContentSubText {
+                color: $gray-600;
+                font-size: $font-lg;
+                line-height: 26px;
+                font-weight: 500;
+            }
+        }
+
+        .hireFromUsImage {
+            position: absolute;
+            bottom: -40px;
+            right: 40px;
+        }
+    }
+}
+
+.serviceDetailsWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 66px;
+
+    .serviceDetailsInnerWrapper {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &:nth-child(2) {
+            width: 80%;
+            z-index: 1;
+        }
+
+        &:nth-child(3) {
+            justify-content: center;
+        }
+
+        .serviceDetailsCard {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 425px;
+            padding: 36px 48px;
+            border: 4px solid transparent;
+            border-radius: 30px;
+            background: linear-gradient(white, white) padding-box, linear-gradient(to left, white, #8BBC3A) border-box;
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+
+            p {
+                font-size: $font-lg;
+                line-height: 30px;
+                font-weight: 300;
+                color: $secondary-400;
+            }
+
+            &:nth-child(even) {
+                background: linear-gradient(white, white) padding-box, linear-gradient(to right, white, #8BBC3A) border-box;
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: white;
+                z-index: -1;
+                filter: blur(10px);
+            }
+        }
+    }
+
+    .mainImageWrapper {
+        max-width: 400px;
+        max-height: 400px;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+
+        .mainImage {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+// Contact us section
+.contactUsSectionWrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 50px;
+
+    .contactUsRightSideWrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        align-items: flex-start;
+
+        .contactUsRightSideTitleWrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+
+            .titleWrapper {
+                color: $secondary-700;
+                font-weight: 700;
+                font-size: $font-48;
+                position: relative;
+    
+                .titleObjectWrapper {
+                    height: 100%;
+                    left: 120px;
+                    top: 60%;
+                    transform: translateY(-40%);
+                    position: absolute;
+
+                    @include desktop {
+                        top: 50% !important;
+                        left: 50% !important;
+                        transform: translate(-50%, -50%) !important;
+                    }
+                }
+            }
+
+            .subTitleWrapper {
+                font-size: $font-md;
+                line-height: 22px;
+                color: $secondary-400;
+
+                .subTitleLink {
+                    color: $primary-500;
+                    list-style-type: none;
+                }
+            }
+        }
+
+        .contactUsFormWrapper {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            
+            .contactFormInputWrapper {
+                width: 100%;     
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                gap: 24px;
+            }
+
+            .contactFormSubmitBtn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        .inputFieldWrapper {
+            display: flex;
+            background-color: $secondary-50;
+            border-radius: 16px;
+            gap: 16px;
+            padding: 20px 30px;
+
+            &.filedUploadWrapper {
+                border: 1px dashed $secondary-200;
+                padding: 0;
+            }
+
+            &.textAreaWrapper {
+                width: 100%;
+            }
+
+            .inputField {
+                font-size: $font-lg;
+                color: $secondary-200;
+                font-family: unset;
+                background-color: unset;
+                border: none;
+
+                &.textAreaDesc {
+                    width: 100% !important;
+                }
+
+                &:focus {
+                    outline: none;
+                }
+
+                &::placeholder {
+                    color: $secondary-200;
+                }
+            }
+
+            .selectField {
+                font-size: $font-lg;
+                color: $secondary-200;
+                font-family: unset;
+                background-color: unset;
+                border: none;
+                width: 100%;
+                appearance: none;
+                cursor: pointer;
+            
+                &:focus {
+                    outline: none;
+                }
+            
+                &::placeholder {
+                    color: $secondary-200;
+                }
+            
+                option {
+                    color: $secondary-200;
+                    background-color: white;
+                    font-family: inherit;
+                }
+            }
+
+            .fileUploadLabel {
+                font-size: $font-lg;
+                color: $secondary-200;
+                font-family: unset;
+                background-color: unset;
+                border: none;
+                padding: 20px 30px;
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+
+                &:hover {
+                    color: $primary-500;
+                }
+            }
+
+            .fileUploadInput {
+                display: none;
+            }
+        }
+    }
+}
+
+.readMoreButton {
+    background-color: $primary-500;
+    border-radius: 8px;
+    white-space: nowrap;
+    font-family: unset;
+    padding: 16px 42px;
+    height: 100%;
+    font-weight: bold;
+    border: none;
+    color: $base-white;
+    font-family: unset;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $primary-600;
+    }
+}

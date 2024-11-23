@@ -1,0 +1,165 @@
+@import "../../app/global.module.scss";
+
+.sectionCardWrapper {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+    gap: 30px;
+
+    @include large-desktop {
+        grid-template-columns: repeat(1, minmax(150px, 1fr));
+        gap: 40px;
+    }
+}
+
+.processCardWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+
+.hiringProcessWrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+
+    .processWrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+
+        .processName {
+            color: $secondary-750;
+            font-size: $font-xl;
+            line-height: 26px;
+            font-weight: 600;
+        }
+    }
+}
+
+.jobPositionMainWrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+
+    .jobPositionCardWrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 48px;
+        position: relative;
+        border: 1px solid transparent;
+        background: linear-gradient(white, white) padding-box, linear-gradient(to top, white, #0B2D61) border-box;
+        padding: 36px 24px;
+        gap: 24px;
+
+        &:nth-child(2), &:nth-child(5) {
+            background: linear-gradient(white, white) padding-box, linear-gradient(to bottom, white, #0B2D61) border-box;
+        }
+
+        .jobPositionContentWrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+
+            .mainContent {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+
+                .mainContentText {
+                    font-size: $font-24;
+                    font-weight: 700;
+                    line-height: 34px;
+                    color: $secondary-750;
+                }
+            }
+
+            .vacancyText {
+                font-size: $font-lg;
+                color: $secondary-300;
+                line-height: 26px;
+
+                .experienceText {
+                    font-weight: 600;
+                    color: $primary-500;
+                }
+            }
+        }
+
+        .getInTouchBtn {
+            background-color: $primary-500;
+            border-radius: 8px;
+            white-space: nowrap;
+            font-family: unset;
+            padding: 0 30px;
+            height: 40px;
+            border: none;
+            color: $base-white;
+            font-family: unset;
+            transition: 0.2s ease-in-out;
+            cursor: pointer;
+        
+            &:hover {
+                background-color: $primary-600;
+            }
+        }
+    }
+}
+
+.joinTeamMainWrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    
+    .innerCardWrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 36px 24px;
+        gap: 24px;
+        border: 4px solid transparent;
+        border-radius: 30px;
+        background: linear-gradient(white, white) padding-box, linear-gradient(to left, white, #8BBC3A) border-box;
+        width: 100%;
+        min-width: 300px;
+
+        &:nth-child(2) {
+            background: linear-gradient(white, white) padding-box, linear-gradient(to right, white, #8BBC3A) border-box;
+        }
+
+        .innerCardText {
+            font-size: $font-lg;
+            line-height: 30px;
+            color: $secondary-400;
+        }
+
+        .innerCardSubLink {
+            font-size: $font-24;
+            line-height: 30px;
+            font-weight: bold;
+            color: $secondary-400;
+            text-decoration: none;
+        }
+    }
+}

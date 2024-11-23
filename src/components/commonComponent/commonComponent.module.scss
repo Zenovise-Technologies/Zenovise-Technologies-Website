@@ -1,0 +1,723 @@
+@import "../../app/global.module.scss";
+
+.sectionLayoutMainWrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+
+    .sectionLayoutInnerMainWrapper {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        padding: 100px 0;
+        
+        .sectionLayoutContentWrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+            height: 100%;
+            max-width: 80%;
+            width: 100%;
+    
+            .layoutInnerContent {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+                gap: 14px;
+    
+                .titleWrapper {
+                    color: $secondary-700;
+                    font-weight: 700;
+                    font-size: $font-48;
+                    position: relative;
+
+                    @include desktop {
+                        font-size: $font-40;
+                    }
+    
+                    .titleObjectWrapper {
+                        height: 100%;
+                        position: absolute;
+
+                        @include desktop {
+                            top: 50% !important;
+                            left: 50% !important;
+                            transform: translate(-50%, -50%) !important;
+                        }
+    
+                        .titleObjImage {
+                            height: 100%;
+                        }
+                    }
+                }
+        
+                .divider {
+                    background-color: $primary-600;
+                    width: 2px;
+                    height: 50px;
+                }
+        
+                .subTitleWrapper {
+                    color: $secondary-400;
+                    font-size: $font-lg;
+                }
+            }
+        }
+    
+        .vectorImageWrapper {
+            position: absolute;
+            color: transparent;
+            position: absolute;
+            top: -28px;
+            transform: rotate(-5deg);
+            left: 0;
+            
+            .vectorImage {
+                width: 510px;
+                height: 340px;
+            }
+        }
+    }
+
+}
+
+.readMoreButton {
+    background-color: $primary-500;
+    border-radius: 8px;
+    white-space: nowrap;
+    font-family: unset;
+    padding: 0 30px;
+    height: 40px;
+    border: none;
+    color: $base-white;
+    font-family: unset;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $primary-600;
+    }
+}
+
+.sectionCardInnerInfo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 16px;
+    padding: 45px 42px 32px 42px;
+    border-width: 0 0 0 8px;
+    border-color: $primary-500;
+    border-style: solid;
+    overflow: hidden;
+
+    .sectionCardEllipse {
+        position: absolute;
+        width: 319px;
+        height: 264px;
+        border-radius: 50%;
+        right: -52px;
+        top: -58px;
+    }
+
+    .sectionCardImage {
+        position: absolute;
+        top: 10px;
+        right: 0;
+    }
+
+    .sectionCardCount {
+        font-size: $font-72;
+        font-weight: 700;
+        color: $secondary-700;
+    }
+
+    .sectionCardContent {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        z-index: 1;
+        
+        .title {
+            color: $secondary-750;
+            font-size: $font-30;
+            font-weight: 700;
+        }
+        
+        .description {
+            color: $secondary-300;
+            font-size: $font-lg;
+        }
+    }
+}
+
+.cardOuterWrapper {
+    width: 100%;
+    max-width: 255px;
+    max-height: 147px;
+    height: 100%;
+    display: flex;
+    position: relative;
+    
+    .cardCircle {
+        width: 30px;
+        height: 30px;
+        background-color: $primary-500;
+        border-radius: 50%;
+        position: absolute;
+    }
+
+    .cardInnerWrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        border-radius: 40px;
+        background-color: $base-white;
+        gap: 10px;
+        width: 100%;
+        padding: 40px 10px;
+        border: 2px solid transparent;
+        z-index: 1;
+    
+        .cardText {
+            color: $secondary-900;
+            font-weight: 700;
+            font-size: $font-xl;
+        }
+    }
+}
+
+.carousel {
+    overflow: hidden;
+    height: 100%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+
+    .carouselContainer {
+        position: relative;
+        width: 100%;
+        height: 472px;
+    }
+}
+
+.buttonsContainer {
+    width: 100%;
+	display: flex;
+	justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+    button {
+        font-family: unset;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 0.9;
+        }
+        
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.recentProjectsMainWrapper {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 112px;
+    background-color:#0B0F13;
+
+    @include tablet {
+        gap: 60px;
+        flex-direction: column;
+    }
+
+    .recentProjectsContentWrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        .title {
+            color: $gray-500;
+            font-size: $font-32;
+            line-height: 40px;
+        }
+
+        .contentWrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+            .innerContent {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+
+                .contentTitle {
+                    color: $gray-500;
+                    font-size: $font-md;
+                    line-height: 22px;
+                }
+
+                .contentDesc {
+                    color: $gray-600;
+                    font-size: $font-md;
+                    line-height: 22px;
+                }
+            }
+        }
+
+        .readMoreBtnWrapper {
+            width: 196px;
+
+            .readMoreButton {
+                font-family: unset;
+                font-size: $font-md;
+            }
+        }
+    }
+}
+
+.industriesCardOuterWrapper {
+    width: 100%;
+    max-height: 255px;
+    max-width: 270px;
+    height: 100%;
+    display: flex;
+    position: relative;
+    
+    .industriesCardCircle {
+        width: 30px;
+        height: 30px;
+        background-color: $primary-500;
+        border-radius: 50%;
+        position: absolute;
+    }
+
+    .industriesCardInnerWrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        border-radius: 48px;
+        gap: 10px;
+        width: 100%;
+        border: 1px solid transparent;
+        z-index: 1;
+        overflow: hidden;
+    
+        .industriesCardText {
+            color: $secondary-900;
+            font-weight: 700;
+            font-size: $font-xl;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            width: 100%;
+            height: 100%;
+            padding: 36px 32px;
+
+            .industriesCardImgWrapper {
+                width: 200px;
+                height: 140px;
+                position: relative;
+                .industriesCardImg {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+        }
+    }
+}
+
+// Client comments
+
+.commentOuterWrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: 16px 0 90px 0;
+
+    .commentCardWrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 30px 20px;
+        border: 2px solid transparent;
+        border-radius: 24px;
+        gap: 16px;
+        min-height: 284px;
+        height: 354px;
+        position: relative;
+    
+        .commentTopImage {
+            position: absolute;
+            top: -20px;
+            left: 32px;
+        }
+    
+        .commentBottomImage {
+            position: absolute;
+            bottom: -20px;
+            right: 32px;
+        }
+    
+        .commentCardComment {
+            color: $secondary-300;
+            font-size: $font-md;
+            line-height: 26px;
+            font-weight: 500;
+        }
+    
+        .commentCardName {
+            color: $primary-600;
+            font-size: $font-lg;
+            line-height: 26px;
+            font-weight: 600;
+        }
+    }
+}
+
+// Hire Developer
+.hireDeveloperMainWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, rgba(62, 76, 73, 1) 0%, rgba(12, 25, 38, 1) 70%);
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+
+    .hireDeveloperInnerWrapper {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        width: 70%;
+        margin: 36px auto;
+        z-index: 1;
+
+        @include large-desktop {
+            flex-direction: column-reverse;
+            justify-content: center;
+
+            .hireDeveloperContent {
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+        }
+
+        .hireDeveloperContent {
+            display: flex;
+            flex-direction: column;
+            gap: 36px;
+
+            .hireDeveloperContentInner {
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+
+                .title {
+                    font-size: $font-40;
+                    color: $base-white;
+                    line-height: 50px;
+                    font-weight: bold;
+                    padding-bottom: 24px;
+                    border-bottom: 2px solid #3e3e3e;
+                }
+
+                .label {
+                    font-size: $font-md;
+                    line-height: 20px;
+                    color: $base-white;
+                }
+            }
+
+            .hireButtonWrapper {
+                .hireButton {
+                    background-color: transparent;
+                    border-radius: 8px;
+                    color: $base-white;
+                    padding: 16px 42px;
+                    font-family: unset;
+                    border: 2px solid $gray-500;
+                }
+            }
+        }
+
+        .developerImgWrapper {
+            max-width: 415px;
+            max-height: 360px;
+            width: 100%;
+            height: 100%;
+
+            .dedicatedImg {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    .vectorImageWrapper {
+        right: -100px;
+        transform: scale(-1, 1) rotate(-5deg);
+        position: absolute;
+        top: -10px;
+
+        .vectorImage {
+            width: 500px;
+            height: 100%;
+        }
+    }
+}
+
+// Contact us section
+.contactUsSectionWrapper {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 100px auto;
+    gap: 50px;
+
+    @include large-desktop {
+        align-items: center;
+        flex-direction: column;
+
+        .contactCardWrapper {
+            align-items: center;
+            justify-content: center;
+            width: 100% !important;
+            flex-direction: row !important;
+            flex-wrap: wrap;
+        }
+    }
+
+    .contactCardWrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 47px;
+        width: 30%;
+        
+        .cardWrapper {
+            display: flex;
+            align-items: center;
+            max-width: 400px;
+            width: 100%;
+            gap: 32px;
+            padding: 32px 36px;
+            border-radius: 18px;
+            border: 1px solid #E2E8EE;
+            transition: 0.2s ease-in-out;
+            cursor: pointer;
+
+            &:hover {
+                box-shadow: 0px 8px 10px rgba(54, 86, 119, 0.1);
+            }
+
+            .cardContentWrapper {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+
+                .title {
+                    font-size: $font-24;
+                    font-weight: bold;
+                    line-height: 30px;
+                    color: $secondary-750;
+                }
+
+                .infoText {
+                    font-size: $font-lg;
+                    line-height: 28px;
+                    color: $secondary-400;
+                }
+            }
+        }
+    }
+
+    .contactUsImgWrapper {
+        max-width: 590px;
+        max-height: 480px;
+        width: 100%;
+        height: 100%;
+
+        .contactUsImg {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .contactUsRightSideWrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        align-items: flex-start;
+
+        .contactUsRightSideTitleWrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+
+            .titleWrapper {
+                color: $secondary-700;
+                font-weight: 700;
+                font-size: $font-48;
+                position: relative;
+    
+                .titleObjectWrapper {
+                    height: 100%;
+                    left: 120px;
+                    top: 60%;
+                    transform: translateY(-40%);
+                    position: absolute;
+
+                    @include desktop {
+                        top: 50% !important;
+                        left: 50% !important;
+                        transform: translate(-50%, -50%) !important;
+                    }
+                }
+            }
+
+            .subTitleWrapper {
+                font-size: $font-md;
+                line-height: 22px;
+                color: $secondary-400;
+
+                .subTitleLink {
+                    color: $primary-500;
+                    list-style-type: none;
+                }
+            }
+        }
+
+        .contactUsFormWrapper {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            
+            .contactFormInputWrapper {
+                width: 100%;     
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+                gap: 24px;
+            }
+
+            .contactFormSubmitBtn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        .inputFieldWrapper {
+            display: flex;
+            background-color: $secondary-50;
+            border-radius: 16px;
+            gap: 16px;
+            padding: 20px 30px;
+
+            &.textAreaWrapper {
+                width: 100%;
+            }
+
+            .inputField {
+                font-size: $font-lg;
+                color: $secondary-200;
+                font-family: unset;
+                background-color: unset;
+                border: none;
+
+                &.textAreaDesc {
+                    width: 100% !important;
+                }
+
+                &:focus {
+                    outline: none;
+                }
+
+                &::placeholder {
+                    color: $secondary-200;
+                }
+            }
+        }
+    }
+}
+
+// Global Presence Card
+.globalPresenceOuterWrapper {
+    width: 100%;
+    max-width: 350px;
+    max-height: 302px;
+    height: 100%;
+    display: flex;
+    position: relative;
+    
+    .globalPresenceCircle {
+        width: 46px;
+        height: 46px;
+        background-color: $primary-500;
+        border-radius: 50%;
+        position: absolute;
+        left: 42px;
+        bottom: -22px;
+    }
+
+    .globalPresenceInnerWrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        border-radius: 48px;
+        gap: 10px;
+        width: 100%;
+        padding: 48px 30px;
+        border: 2px solid transparent;
+        z-index: 1;
+        background: linear-gradient(white, white) padding-box, linear-gradient(to bottom, white, #0B2D61) border-box;
+    
+        .globalPresenceTextWrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 24px;
+
+            .globalPresenceTitle {
+                color: $secondary-750;
+                font-size: $font-24;
+                font-weight: 600;
+                line-height: 34px;
+            }
+
+            .globalPresenceSubtitle {
+                color: $secondary-300;
+                font-size: $font-md;
+                line-height: 22px;
+            }
+        }
+    }
+}
