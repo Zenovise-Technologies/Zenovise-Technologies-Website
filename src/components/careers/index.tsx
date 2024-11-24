@@ -43,7 +43,7 @@ const Careers = () => {
       />
       <SectionLayout
         title='Job Positions'
-        subTitle='Requirement for January 2023'
+        subTitle='Current Opening Requirement Positions In Company'
         backgroundColor='#F9FAFB'
         titleBgWidth={250}
         titleBgPosition={{

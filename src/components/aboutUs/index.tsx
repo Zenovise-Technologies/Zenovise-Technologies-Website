@@ -96,8 +96,8 @@ const AboutUs = () => {
           <div className={`${styles.sectionCardWrapper} ${styles.onlyImage}`}>
             <Image
               className={styles.mainImage}
-              src="/assets/images/technology-stack.svg"
-              alt="technology-stack"
+              src="/assets/images/award-membership.svg"
+              alt="award-membership"
               width={140}
               height={43}
             />

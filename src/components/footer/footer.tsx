@@ -28,11 +28,11 @@ const Footer = () => {
               height={16}
             />
             <p className={styles.infoSubText}>
-              Sahara Darwaja,
+              O-1, 1st Floor, Silver Palm Bldg,
               <br />
-              Ring Road, Surat,
+              Besides, Kadampally Society,
               <br />
-              Gujarat, India-395101
+              Timaliawad, Surat, Gujarat 395001
             </p>
           </div>
         </div>

@@ -393,19 +393,19 @@ export const caseStudiesCategories = [
 
 export const contactUsInfo = [
     {
-        title: "Business",
+        title: "Call For Business",
         info: "+91 90230 31034",
         imgName: "headphone-primary",
     }, 
     {
-        title: "Career",
+        title: "Call For Career",
         info: "+91 90230 31034",
         imgName: "headphone-primary",
     }, 
     {
-        title: "Email",
+        title: "Mail Us On Email",
         info: "info@zenovise.in",
-        imgName: "headphone-primary",
+        imgName: "contactus-email",
     },
 ]
 
@@ -1152,8 +1152,8 @@ export const squadMembersItem = [
 
 export const hiringProcessSteps = [
     {
-        name: "identity",
-        imgName: "identity"
+        name: "Identify",
+        imgName: "identify"
     },
     {
         name: "Shortlist CV",
@@ -1248,22 +1248,22 @@ export const processFollowSteps = [
     {
         title: "Hire your developer",
         subTitle: "Once you take an interview and choose your developer, we finish formalities.",
-        imgName: "requirement-gathering"
+        imgName: "hire-your-developer"
     },
     {
         title: "Sign the Contract",
         subTitle: "We sign a contract with you for the work once all requirements are received.",
-        imgName: "requirement-gathering"
+        imgName: "sign-your-contract"
     },
     {
         title: "Start Your project",
         subTitle: "As soon as all the formalities are completed we start working on your project.",
-        imgName: "requirement-gathering"
+        imgName: "start-your-project"
     },
     {
         title: "Support & Maintenance",
         subTitle: "We provide utmost support to you throughout the process.",
-        imgName: "requirement-gathering"
+        imgName: "support-maintenance"
     },
 ]
 
@@ -1276,21 +1276,21 @@ export const hireFromUsReasons = [
     {
         title: "Flexible Hiring",
         subTitle: "On any project, you may engage our developer on an hourly, monthly, or yearly basis.",
-        imgName: "security"
+        imgName: "flexible-hiring"
     },
     {
         title: "On-Time Delivery",
         subTitle: "We believe in completing the assignment ahead of the client's deadline.",
-        imgName: "security"
+        imgName: "on-time-delivery"
     },
     {
         title: "Communication",
         subTitle: "The development's progress report is delivered on a regular schedule.",
-        imgName: "security"
+        imgName: "communication"
     },
     {
         title: "Cost Effective",
         subTitle: "Hire our designers and developers for a fraction of the market price.",
-        imgName: "security"
+        imgName: "cost-effective"
     },
 ]

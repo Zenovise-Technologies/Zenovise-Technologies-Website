@@ -15,7 +15,7 @@ const GlobalPresenceCard = () => {
                     alt='india-badge'
                 />
                 <p className={styles.globalPresenceTitle}>India</p>
-                <p className={styles.globalPresenceSubtitle}>Sahara Darwaja, Ring Road, Surat, Gujarat, India-395101</p>
+                <p className={styles.globalPresenceSubtitle}>O-1, 1st Floor, Silver Palm, Bldg, Besides, Kadampally Society, Timaliawad, Dhanmora, Surat, Gujarat 395001</p>
             </div>
         </div>
     </div>
