@@ -1,8 +1,10 @@
 import React from "react";
 import styles from "./footer.module.scss";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 const Footer = () => {
+  const pathname = usePathname();
   return (
     <footer>
       <div className={styles.footerMainInfoBoxWrapper}>
@@ -109,7 +111,7 @@ const Footer = () => {
             <p className={styles.footerSiteMapListTitle}>Company</p>
             <div className={styles.footerSiteMapListItemWrapper}>
               <div className={styles.footerSiteMapListItem}>
-                <a href="/" target="_blank">
+              <a href="/" target="_blank">
                   About Us
                 </a>
                 <a href="/" target="_blank">

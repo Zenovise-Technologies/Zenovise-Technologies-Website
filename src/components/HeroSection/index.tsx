@@ -237,19 +237,19 @@ const HeroSection = (props: IHeroSectionProps) => {
             <div className={styles.infoCardWrapper}>
               <div className={styles.cardInnerWrapper}>
                 <div className={styles.countText}>
-                  <CountUp start={1} end={200} />+
+                  <CountUp start={1} end={30} />+
                 </div>
                 <div className={styles.cardText}>Completed Projects</div>
               </div>
               <div className={styles.cardInnerWrapper}>
                 <div className={styles.countText}>
-                  <CountUp start={1} end={5} />+
+                  <CountUp start={1} end={2} />+
                 </div>
                 <div className={styles.cardText}>Years Of Experience</div>
               </div>
               <div className={styles.cardInnerWrapper}>
                 <div className={styles.countText}>
-                  <CountUp start={1} end={50} />+
+                  <CountUp start={1} end={15} />+
                 </div>
                 <div className={styles.cardText}>IT Experts Team</div>
               </div>
