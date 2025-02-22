@@ -1,3 +1,5 @@
+"use client";  // Ensure this is at the very top
+
 import React from "react";
 import styles from "./footer.module.scss";
 import Image from "next/image";
