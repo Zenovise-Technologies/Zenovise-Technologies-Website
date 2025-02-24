@@ -141,6 +141,21 @@
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    transition: all 0.3s ease-in-out;
+
+                    &:hover {
+                        transform: scale(1.1);
+                        background-color: lighten($secondary-750, 10%); // Lightens background
+                        box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2); // Subtle glow
+                    }
+
+                    .vectorImgRight {
+                        transition: transform 0.3s ease-in-out;
+                    }
+
+                    &:hover .vectorImgRight {
+                        transform: rotate(360deg);
+                    }
                 }
             }
         }
