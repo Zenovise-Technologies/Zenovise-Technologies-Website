@@ -82,9 +82,6 @@ const Footer = () => {
               <a href="/" target="_blank" className={styles.infoSubText}>
                 info@zenovise.in
               </a>
-              <a href="/" target="_blank" className={styles.infoSubText}>
-                sales@zenovise.in
-              </a>
             </div>
           </div>
         </div>
@@ -113,27 +110,27 @@ const Footer = () => {
             <p className={styles.footerSiteMapListTitle}>Company</p>
             <div className={styles.footerSiteMapListItemWrapper}>
               <div className={styles.footerSiteMapListItem}>
-              <a href="/" target="_blank">
+              <a href={"/about-us"} target="_blank">
                   About Us
                 </a>
-                <a href="/" target="_blank">
-                  Work
+                <a href={"/portfolio"} target="_blank">
+                  Work Portfolio
                 </a>
                 <a href="/" target="_blank">
                   FAQs
                 </a>
-                <a href="/" target="_blank">
-                  Contact
+                <a href={"/contact-us"} target="_blank">
+                  Contact Us
                 </a>
               </div>
               <div className={styles.footerSiteMapListItem}>
-                <a href="/" target="_blank">
+                <a href={"/services"} target="_blank">
                   Services
                 </a>
-                <a href="/" target="_blank">
+                <a href={"/offshore-hire"} target="_blank">
                   Offshore & Hire
                 </a>
-                <a href="/" target="_blank">
+                <a href={"/careers"} target="_blank">
                   Careers
                 </a>
                 <a href="/" target="_blank">
@@ -266,7 +263,7 @@ const Footer = () => {
             />
           </div>
           <p className={styles.copyRightReservedText}>
-            © 2024 Zenovise Technologies. All Rights Reserved
+            © 2025 Zenovise Technologies. All Rights Reserved
           </p>
         </div>
       </div>

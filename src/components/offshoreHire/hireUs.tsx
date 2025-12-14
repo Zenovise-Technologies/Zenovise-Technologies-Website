@@ -155,7 +155,7 @@ const HireUs = () => {
                 value={state.skype_id}
                 onChange={handleChange}
                 type="text"
-                placeholder="Skype ID (Optional)"
+                placeholder="Your Teams ID (Optional)"
               />
             </div>
 
