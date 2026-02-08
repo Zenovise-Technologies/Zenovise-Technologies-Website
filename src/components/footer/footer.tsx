@@ -263,7 +263,7 @@ const Footer = () => {
             />
           </div>
           <p className={styles.copyRightReservedText}>
-            © 2025 Zenovise Technologies. All Rights Reserved
+            © 2026 Zenovise Technologies. All Rights Reserved
           </p>
         </div>
       </div>
